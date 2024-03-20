@@ -6,10 +6,13 @@ const server=http.createServer(()=>{
     let url=req.url
     if(url==='/'){
         res.write('home')
+        res.end()
     }
     else if(url==='/about'){
         res.write('about')
+        res.end()
     }
+    return res.end()
 
 })
 
