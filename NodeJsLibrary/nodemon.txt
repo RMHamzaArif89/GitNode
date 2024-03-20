@@ -1,0 +1,10 @@
+Updated the script like if u install the nodemon pckage --save-dev or --save
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   // "start":"nodemon MyApp.js",
+    "start-server":"node MyApp.js"
+  },
+
+if u install the nodemon pcg npm i nodemon -g then no need to use this 
+
+
