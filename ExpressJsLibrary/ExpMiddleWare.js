@@ -5,15 +5,16 @@ const app = express()
 //On every request it will be render
 //use next argument
 //page will be loading again & again
-app.use((req,res,next)=>{
-res.send('send')
-})
-
-
-
 //correct method
 app.use((req,res,next)=>{
     res.send('send')
     //it will go to next req
     next();
 })
+
+app.use((req,res,next)=>{
+    res.send('send')
+    })
+    
+    
+    
