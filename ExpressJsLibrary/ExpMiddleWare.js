@@ -16,5 +16,11 @@ app.use((req,res,next)=>{
     res.send('send')
     })
     
+
+//middleware route with the path
+app.use('/home',(req,res,next)=>{
+    res.send('home page')
+    //this will not go next
+})
     
     
