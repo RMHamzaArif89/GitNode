@@ -1,4 +1,4 @@
-
+const hbs=require('express-handlebars')
 //app.set use to set the name & value...
 //set the view engine
 
