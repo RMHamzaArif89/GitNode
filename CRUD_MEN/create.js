@@ -1,4 +1,7 @@
 
+//to get the req.body data
+router.use(express.urlencoded({extended:false}))
+router.use(express.json())
 
 router.post('/create',async(req,res)=>{
  
