@@ -28,6 +28,8 @@ router.get('/edit/:id',async(req,res)=>{
 //    <input type="text"  value="<%=value.name%>" name="name" class="form-control" id="name" aria-describedby="emailHelp">
 //  </div>
    
+
+//upload.single should only inlucd if it has a img file in form
    router.post('/formData/:id',upload.single('img'),async(req,res)=>{
    
    try{
