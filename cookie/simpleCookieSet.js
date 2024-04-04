@@ -7,8 +7,10 @@ app.get('/login',(req,res)=>{
 
 
 app.post('/login',(req,res)=>{
-
-    res.setHeader('Set-Cookie','MyCookie=cookieSetByHeader')
+    //maximum age that the cookie will be appeared
+    res.setHeader('Set-Cookie','MyCookie=cookieSetByHeader; Max-Age=10')
+    //it will not show the cookie by secure method
+    res.setHeader('Set-Cookie','MyCookie=cookieSetByHeader; Secure')
     res.redirect('/form')
 
 })
